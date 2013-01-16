@@ -21,7 +21,7 @@ public class MenuActivity extends Activity {
 		return true;
 	}
 	
-	void onButton(View v)
+	public void onButton(View v)
 	{
 		switch(v.getId())
 		{

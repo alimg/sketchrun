@@ -20,6 +20,7 @@
         android:layout_alignRight="@+id/textView1"
         android:layout_marginRight="54dp"
         android:layout_marginTop="45dp"
+        android:onClick="onButton"
         android:text="play" />
 
 </RelativeLayout>

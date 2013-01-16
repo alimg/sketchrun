@@ -2,7 +2,9 @@ package com.uyduramadimbirseyler.sketchrun;
 
 import android.os.Bundle;
 import android.app.Activity;
+import android.content.Intent;
 import android.view.Menu;
+import android.view.View;
 
 public class MenuActivity extends Activity {
 
@@ -18,5 +20,14 @@ public class MenuActivity extends Activity {
 		getMenuInflater().inflate(R.menu.activity_menu, menu);
 		return true;
 	}
-
+	
+	void onButton(View v)
+	{
+		switch(v.getId())
+		{
+		case R.id.button1:
+			Intent i=new Intent(this,MainActivity.class);
+			startActivity(i);
+		}
+	}
 }

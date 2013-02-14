@@ -39,10 +39,10 @@ public class GameView extends SurfaceView implements SurfaceHolder.Callback{
 		super.onDraw(canvas);
 		if(mGame.ready)
 		{
-			r.left=mGame.player.pos.x;
-			r.right=mGame.player.pos.x+50;
-			r.top=mGame.player.pos.y;
-			r.bottom=mGame.player.pos.y+100;
+			r.left=mGame.player.getPos().x;
+			r.right=mGame.player.getPos().x+50;
+			r.top=mGame.player.getPos().y;
+			r.bottom=mGame.player.getPos().y+100;
 			canvas.drawRect(r, paint);
 		}
 		//Log.d("tag","asdf "+mGame.mState);
